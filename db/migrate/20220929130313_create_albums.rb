@@ -4,7 +4,7 @@ class CreateAlbums < ActiveRecord::Migration[7.0]
       t.string :name
       t.belongs_to :composer, null: false, polymorphic: true, index: true
       t.string :genre
-      t.integer :released_at
+      t.date :released_at
 
       t.timestamps
     end

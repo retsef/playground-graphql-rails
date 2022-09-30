@@ -27,6 +27,7 @@ end
   Album.create(
     name: Faker::Music.album,
     released_at: Date.new(rand(1970..2021), rand(1..12)),
+    genre: Faker::Music.genre,
     composer: [Author, Group].sample.all.sample,
     tracks: rand(1..12).times.map { Track.new(name: Faker::Music::RockBand.song) }
   )

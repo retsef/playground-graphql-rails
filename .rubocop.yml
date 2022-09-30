@@ -13,3 +13,18 @@ require:
   - rubocop-rails
   - rubocop-rspec
   - rubocop-graphql
+
+Style/Documentation:
+  Enabled: false
+
+GraphQL/FieldDescription:
+  Enabled: false
+
+GraphQL/ObjectDescription:
+  Enabled: false
+
+GraphQL/OrderedFields:
+  Enabled: false
+
+GraphQL/ArgumentDescription:
+  Enabled: false
