@@ -1,5 +1,7 @@
 module Queries
   class GroupQuery < BaseQuery
+    description 'Find a group by ID'
+
     argument :id, ID, required: true
 
     type Models::GroupType, null: false

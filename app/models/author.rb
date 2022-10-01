@@ -12,5 +12,6 @@ class Author < ApplicationRecord
   has_many :albums, as: :composer, dependent: :destroy
   has_many :tracks, through: :albums
 
-  has_and_belongs_to_many :groups, join_table: :group_authors
+  has_many :group_authors, dependent: :destroy
+  has_many :groups, through: :group_authors
 end

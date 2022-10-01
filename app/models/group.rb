@@ -8,7 +8,9 @@
 #  updated_at :datetime         not null
 #
 class Group < ApplicationRecord
-  has_many :albums, as: :composer
+  has_many :albums, as: :composer, dependent: :destroy
+  has_many :tracks, through: :albums
 
-  has_and_belongs_to_many :authors, join_table: :group_authors
+  has_many :group_authors, dependent: :destroy
+  has_many :authors, through: :group_authors
 end

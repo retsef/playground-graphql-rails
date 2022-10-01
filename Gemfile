@@ -25,7 +25,7 @@ gem 'jbuilder'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'graphql'
-gem 'graphiql-rails', group: :development
+# gem 'graphiql-rails', group: :development
 
 gem 'ransack'
 

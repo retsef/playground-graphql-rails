@@ -6,6 +6,9 @@ module Models
 
     field :id, ID, null: false
     field :name, String
+
     field :groups, Models::GroupType.connection_type
+    field :albums, Models::AlbumType.connection_type
+    field :tracks, Models::TrackType.connection_type
   end
 end

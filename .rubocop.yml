@@ -28,3 +28,6 @@ GraphQL/OrderedFields:
 
 GraphQL/ArgumentDescription:
   Enabled: false
+
+GraphQL/OrderedArguments:
+  Enabled: false
